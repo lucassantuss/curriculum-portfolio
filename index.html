@@ -1,269 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Lucas Araujo dos Santos</title>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://lucassantuss.github.io/Curriculo-Portfolio/" class="link"
-          >Lucas Araujo</a
-        >
-      </h3>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#experiencias">Experiência Profissional</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#formacoes">Formação Acadêmica</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#habilidades">Habilidades</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contato">Contato</a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/icon.png" type="image/png">
+  <title>Lucas Araujo dos Santos</title>
+</head>
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+<body class="light" id="top">
+  <header class="header center">
+    <h3>
+      <a href="https://lucassantuss.github.io/Curriculo-Portfolio/" class="link">Lucas Araujo</a>
+    </h3>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#experiencias">Experiência Profissional</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#formacoes">Formação Acadêmica</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#certificados">Certificados</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contato">Contato</a>
+        </li>
+      </ul>
 
-    <main>
-      <!-- Introdução -->
-      <div class="about center">
-        <h1>Olá, Eu sou o <span class="about__name">Lucas</span></h1>
-        <h2 class="about__role">Desenvolvedor Full-Stack</h2>
-        <p class="about__desc">
-          Estudante de Engenharia de Computação no
-          7º Semestre, técnico em Informática formado,
-          com grande disposição e determinação para
-          auxiliar a equipe no dia a dia.
-        </p>
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
 
-        <div class="about__contato center">
-          <a
-            href="https://github.com/lucassantuss"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introdução -->
+    <div class="about center">
+      <h1>Olá, Eu sou o <span class="about__name">Lucas</span></h1>
+      <h2 class="about__role">Desenvolvedor Full-Stack</h2>
+      <p class="about__desc">
+        Estudante de Engenharia de Computação no
+        8º Semestre, técnico em Informática formado,
+        com grande disposição e determinação para
+        auxiliar a equipe no dia a dia.
+      </p>
+
+      <div class="about__contato center">
+        <a href="https://github.com/lucassantuss" target="_blank" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/lucassantuss" target="_blank" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Experiência Profissional -->
+    <section id="experiencias" class="section experiencias">
+      <h2 class="section__title">Experiência Profissional</h2>
+
+      <div class="experiencias__grid">
+        <div class="experiencia">
+          <h3>Patéssio Participações LTDA (Termomecanica)</h3>
+          <p class="experiencia__description">
+            • Jan/2023 - atual
+          </p>
+          <p class="experiencia__description">
+            • Estagiário de Desenvolvimento de Sistemas
+          </p>
+          <p class="experiencia__description">
+            • Atuação em manutenção, sustentação e melhorias de Sistemas
+            WEB (Intranet, B2B)
+          </p>
+          <p class="experiencia__description">
+            • Participação de novos projetos para grandes clientes, utilizando-se
+            de metodologias ágeis como o Scrum
+          </p>
+          <ul class="experiencia__stack">
+            <li class="experiencia__stack-item">C#</li>
+            <li class="experiencia__stack-item">JavaScript</li>
+            <li class="experiencia__stack-item">Jquery</li>
+            <li class="experiencia__stack-item">HTML</li>
+            <li class="experiencia__stack-item">CSS</li>
+            <li class="experiencia__stack-item">Bootstrap</li>
+            <li class="experiencia__stack-item">Blazor</li>
+            <li class="experiencia__stack-item">ASPNET MVC 5</li>
+            <li class="experiencia__stack-item">.Net Framework</li>
+            <li class="experiencia__stack-item">Entity Framework</li>
+            <li class="experiencia__stack-item">Web APIs</li>
+            <li class="experiencia__stack-item">SQL Server</li>
+            <li class="experiencia__stack-item">TFS</li>
+            <li class="experiencia__stack-item">ASPNET Core</li>
+            <li class="experiencia__stack-item">Flutter</li>
+          </ul>
+
+          <a href="https://www.termomecanica.com.br/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
+        </div>
 
-          <a
-            href="https://linkedin.com/in/lucassantuss"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
+        <div class="experiencia">
+          <h3>SBK BS</h3>
+          <p class="experiencia__description">
+            • Nov/2021 - Dez/2022
+          </p>
+          <p class="experiencia__description">
+            • Analista de Suporte Técnico
+          </p>
+          <p class="experiencia__description">
+            • Realização de atendimento de primeiro e segundo nível via ITSM
+          </p>
+          <p class="experiencia__description">
+            • Gerenciamento de usuários via AD (Active Directory)
+          </p>
+          <p class="experiencia__description">
+            • Gerenciamento do antivírus Crowdstrike
+          </p>
+          <p class="experiencia__description">
+            • Atuação com Zabbix, Firewall Fortinet
+          </p>
+          <p class="experiencia__description">
+            • Atuação com Help Desk, manutenção de Hardwares e Softwares
+          </p>
+          <ul class="experiencia__stack">
+            <li class="experiencia__stack-item">Zabbix</li>
+            <li class="experiencia__stack-item">Firewall Fortinet</li>
+            <li class="experiencia__stack-item">Help Desk</li>
+            <li class="experiencia__stack-item">Office 365</li>
+            <li class="experiencia__stack-item">Crowdstrike</li>
+          </ul>
+
+          <a href="https://www.sbk.com.br/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>
+    </section>
 
-      <!-- Experiência Profissional -->
-      <section id="experiencias" class="section experiencias">
-        <h2 class="section__title">Experiência Profissional</h2>
+    <!-- Formação Acadêmica -->
+    <section id="formacoes" class="section formacoes">
+      <h2 class="section__title">Formação Acadêmica</h2>
 
-        <div class="experiencias__grid">
-          <div class="experiencia">
-            <h3>Patéssio Participações LTDA (Termomecanica)</h3>
-            <p class="experiencia__description">
-              • Jan/2023 - atual
-            </p>
-            <p class="experiencia__description">
-              • Estagiário de Desenvolvimento de Sistemas
-            </p>
-            <p class="experiencia__description">
-              • Atuação em manutenção, sustentação e melhorias de Sistemas
-              WEB (Intranet, B2B)
-            </p>
-            <p class="experiencia__description">
-              • Participação de novos projetos para grandes clientes, utilizando-se
-              de metodologias ágeis como o Scrum
-            </p>
-            <ul class="experiencia__stack">
-              <li class="experiencia__stack-item">C#</li>
-              <li class="experiencia__stack-item">JavaScript</li>
-              <li class="experiencia__stack-item">Jquery</li>
-              <li class="experiencia__stack-item">HTML</li>
-              <li class="experiencia__stack-item">CSS</li>
-              <li class="experiencia__stack-item">Bootstrap</li>
-              <li class="experiencia__stack-item">Blazor</li>
-              <li class="experiencia__stack-item">ASPNET MVC 5</li>
-              <li class="experiencia__stack-item">.Net Framework</li>
-              <li class="experiencia__stack-item">Entity Framework</li>
-              <li class="experiencia__stack-item">Web APIs</li>
-              <li class="experiencia__stack-item">SQL Server</li>
-              <li class="experiencia__stack-item">TFS</li>
-              <li class="experiencia__stack-item">ASPNET Core</li>
-              <li class="experiencia__stack-item">Flutter</li>
-            </ul>
-
-            <a
-              href="https://www.termomecanica.com.br/"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="experiencia">
-            <h3>SBK BS</h3>
-            <p class="experiencia__description">
-              • Nov/2021 - Dez/2022
-            </p>
-            <p class="experiencia__description">
-              • Analista de Suporte Técnico
-            </p>
-            <p class="experiencia__description">
-              • Realização de atendimento de primeiro e segundo nível via ITSM
-            </p>
-            <p class="experiencia__description">
-              • Gerenciamento de usuários via AD (Active Directory)
-            </p>
-            <p class="experiencia__description">
-              • Gerenciamento do antivírus Crowdstrike
-            </p>
-            <p class="experiencia__description">
-              • Atuação com Zabbix, Firewall Fortinet
-            </p>
-            <p class="experiencia__description">
-              • Atuação com Help Desk, manutenção de Hardwares e Softwares
-            </p>
-            <ul class="experiencia__stack">
-              <li class="experiencia__stack-item">Zabbix</li>
-              <li class="experiencia__stack-item">Firewall Fortinet</li>
-              <li class="experiencia__stack-item">Help Desk</li>
-              <li class="experiencia__stack-item">Office 365</li>
-              <li class="experiencia__stack-item">Crowdstrike</li>
-            </ul>
-
-            <a
-              href="https://www.sbk.com.br/"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
+      <div class="formacoes__grid">
+        <div class="formacao">
+          <h3>Faculdade Engenheiro Salvador Arena</h3>
+          <p class="formacao__description">
+            • Cursando Engenharia de Computação (2020 - 2025)
+          </p>
+          <p class="formacao__description">
+            • Cursando o 8º Semestre
+          </p>
+          <p class="formacao__description">
+            • Graduação prevista para 2025
+          </p>
+          <p class="formacao__description">
+            • Projeto "Smart Mart - Uma nova forma de fazer compras:
+            Protótipo de uma cesta de compras inteligente utilizando os
+            conceitos da internet das coisas e o desenvolvimento de uma
+            aplicação web" apresentado no SIMAC V (Simpósio Acadêmico)
+          </p>
         </div>
-      </section>
 
-      <!-- Formação Acadêmica -->
-      <section id="formacoes" class="section formacoes">
-        <h2 class="section__title">Formação Acadêmica</h2>
-
-        <div class="formacoes__grid">
-          <div class="formacao">
-            <h3>Faculdade Engenheiro Salvador Arena</h3>
-            <p class="formacao__description">
-              • Cursando Engenharia de Computação (2020 - 2025)
-            </p>
-            <p class="formacao__description">
-              • Cursando o 7º Semestre
-            </p>
-            <p class="formacao__description">
-              • Graduação prevista para 2025
-            </p>
-            <p class="formacao__description">
-              • Projeto "Smart Mart - Uma nova forma de fazer compras:
-              Protótipo de uma cesta de compras inteligente utilizando os
-              conceitos da internet das coisas e o desenvolvimento de uma
-              aplicação web" apresentado no SIMAC V (Simpósio Acadêmico)
-            </p>
-          </div>
-
-          <div class="formacao">
-            <h3>ETEC Lauro Gomes</h3>
-            <p class="formacao__description">
-              Técnico em Informática (2018 - 2020)
-            </p>
-            <p class="formacao__description">
-              • Ensino Médio Integrado ao Curso Técnico em Informática
-            </p>
-            <p class="formacao__description">
-              • Campeão do Campeonato Interno de Basquete
-            </p>
-            <p class="formacao__description">
-              • Conhecimentos adquiridos em Banco de Dados, POO, Redes, Java,
-              Desenvolvimento Mobile, C#, HTML, JS e CSS
-            </p>
-          </div>
+        <div class="formacao">
+          <h3>ETEC Lauro Gomes</h3>
+          <p class="formacao__description">
+            Técnico em Informática (2018 - 2020)
+          </p>
+          <p class="formacao__description">
+            • Ensino Médio Integrado ao Curso Técnico em Informática
+          </p>
+          <p class="formacao__description">
+            • Campeão do Campeonato Interno de Basquete
+          </p>
+          <p class="formacao__description">
+            • Conhecimentos adquiridos em Banco de Dados, POO, Redes, Java,
+            Desenvolvimento Mobile, C#, HTML, JS e CSS
+          </p>
         </div>
-      </section>
+    </section>
 
-      <!-- Habilidades -->
-      <section class="section habilidades" id="habilidades">
-        <h2 class="section__title">Habilidades</h2>
-        <ul class="habilidades__list">
-          <li class="habilidades__list-item btn btn--plain">HTML5</li>
-          <li class="habilidades__list-item btn btn--plain">CSS3</li>
-          <li class="habilidades__list-item btn btn--plain">JavaScript</li>
-          <li class="habilidades__list-item btn btn--plain">Git</li>
-          <li class="habilidades__list-item btn btn--plain">C#</li>
-          <li class="habilidades__list-item btn btn--plain">Web APIs</li>
-          <li class="habilidades__list-item btn btn--plain">.NET MVC</li>
-          <li class="habilidades__list-item btn btn--plain">CI/CD</li>
-          <li class="habilidades__list-item btn btn--plain">Banco de Dados (SQL)</li>
-          <li class="habilidades__list-item btn btn--plain">Trabalho em Equipe</li>
-          <li class="habilidades__list-item btn btn--plain">POO - Programação Orientada a Objetos</li>
-          <li class="habilidades__list-item btn btn--plain">Boas práticas de código</li>
-        </ul>
-      </section>
+    <!-- Habilidades -->
+    <section class="section habilidades" id="habilidades">
+      <h2 class="section__title">Habilidades</h2>
+      <ul class="habilidades__list">
+        <li class="habilidades__list-item btn btn--plain">HTML5</li>
+        <li class="habilidades__list-item btn btn--plain">CSS3</li>
+        <li class="habilidades__list-item btn btn--plain">JavaScript</li>
+        <li class="habilidades__list-item btn btn--plain">C#</li>
+        <li class="habilidades__list-item btn btn--plain">Git</li>
+        <li class="habilidades__list-item btn btn--plain">Github</li>
+        <li class="habilidades__list-item btn btn--plain">Web APIs</li>
+        <li class="habilidades__list-item btn btn--plain">.NET MVC</li>
+        <li class="habilidades__list-item btn btn--plain">CI/CD</li>
+        <li class="habilidades__list-item btn btn--plain">Banco de Dados (SQL)</li>
+        <li class="habilidades__list-item btn btn--plain">Trabalho em Equipe</li>
+        <li class="habilidades__list-item btn btn--plain">POO - Programação Orientada a Objetos</li>
+        <li class="habilidades__list-item btn btn--plain">Boas práticas de código</li>
+      </ul>
+    </section>
 
-      <!-- Contato -->
-      <section class="section contato center" id="contato">
-        <h2 class="section__title">Contato</h2>
-        <a href="mailto:lucassantuss@outlook.com">
-          <span class="btn btn--outline">E-mail</span>
-        </a>
-      </section>
-    </main>
+    <!-- Certificados -->
+    <section class="section certificados" id="certificados">
+      <h2 class="section__title">Certificados</h2>
+      <div class="certificados__grid">
 
-    <footer class="footer">
-      <a
-        href="https://lucassantuss.github.io/Curriculo-Portfolio/"
-        class="link footer__link"
-      >
-        Powered by Lucas Araujo dos Santos
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_bootcamp-dio-avanade-activity-7185349831782002688-qpXd')">
+          <img src="assets/images/certificado1.jfif" alt="Bootcamp .NET Developer - Avanade" class="certificado__img">
+          <h3>Bootcamp .NET Developer - Avanade</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 1.
+          </p>
+          <p class="certificado__instituicao">DIO</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_ia-bootcamp-amazonq-activity-7200273283601051648-zUJA')">
+          <img src="assets/images/certificado2.jfif" alt="Bootcamp Nexa - Fundamentos de IA Generativa e Claude 3" class="certificado__img">
+          <h3>Bootcamp Nexa - Fundamentos de IA Generativa e Claude 3</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 2.
+          </p>
+          <p class="certificado__instituicao">DIO</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_bootcamp-dio-ifood-activity-7138654494690631681-XgCG')">
+          <img src="assets/images/certificado3.jfif" alt="Bootcamp Potência Tech iFood - Programação do Zero" class="certificado__img">
+          <h3>Bootcamp Potência Tech iFood - Programação do Zero</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 3.
+          </p>
+          <p class="certificado__instituicao">DIO</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_microservices-docker-kubernetes-activity-7189216644215279617-YtvO')">
+          <img src="assets/images/certificado4.jfif" alt="Formação Aprofunde em .NET com Arquitetura de microsserviços e RabbitMQ" class="certificado__img">
+          <h3>Formação Aprofunde em .NET com Arquitetura de microsserviços e RabbitMQ</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 4.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_microservices-docker-kubernetes-activity-7189216644215279617-YtvO')">
+          <img src="assets/images/certificado5.jfif" alt="Microsserviços e .NET 6: implementando a comunicação" class="certificado__img">
+          <h3>Microsserviços e .NET 6: implementando a comunicação</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 5.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_microservices-docker-kubernetes-activity-7189216644215279617-YtvO')">
+          <img src="assets/images/certificado6.jfif" alt="Microsserviços e .NET 6: deploy na AWS" class="certificado__img">
+          <h3>Microsserviços e .NET 6: deploy na AWS</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 6.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_testes-tests-ti-activity-7171452055188975616-e4Eo')">
+          <img src="assets/images/certificado7.jfif" alt="Testes em .NET:testando software" class="certificado__img">
+          <h3>Testes em .NET: testando software</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 7.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_testes-tests-ti-activity-7171452055188975616-e4Eo')">
+          <img src="assets/images/certificado8.jfif" alt="Testes em .NET: integrando a aplicação com um banco de dados" class="certificado__img">
+          <h3>Testes em .NET: integrando a aplicação com um banco de dados</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 8.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_testes-tests-ti-activity-7171452055188975616-e4Eo')">
+          <img src="assets/images/certificado9.jfif" alt="Testes em .NET: integração e entrega contínua com Azure DevOps" class="certificado__img">
+          <h3>Testes em .NET: integração e entrega contínua com Azure DevOps</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 9.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_webapis-alura-programacao-activity-7166386156010364928-4u6r')">
+          <img src="assets/images/certificado10.jfif" alt=".NET 6: criando uma web API" class="certificado__img">
+          <h3>.NET 6: criando uma web API</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 10.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_webapis-alura-programacao-activity-7166386156010364928-4u6r')">
+          <img src="assets/images/certificado11.jfif" alt=".NET 6: relacionando entidades" class="certificado__img">
+          <h3>.NET 6: relacionando entidades</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 11.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_webapis-alura-programacao-activity-7166386156010364928-4u6r')">
+          <img src="assets/images/certificado12.jfif" alt=".NET 6 e Identity: implementando controle de usuário" class="certificado__img">
+          <h3>.NET 6 e Identity: implementando controle de usuário</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 12.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_alura-designpatterns-programacao-activity-7156088608716660736--5YZ')">
+          <img src="assets/images/certificado13.jfif" alt="Integração Contínua: mais qualidade e menos risco no desenvolvimento" class="certificado__img">
+          <h3>Integração Contínua: mais qualidade e menos risco no desenvolvimento</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 13.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+
+        <div class="certificado" onclick="abrirLink('https://www.linkedin.com/posts/lucassantuss_alura-designpatterns-programacao-activity-7156088608716660736--5YZ')">
+          <img src="assets/images/certificado14.jfif" alt="Entrega Contínua: confiabilidade e qualidade na implantação de software" class="certificado__img">
+          <h3>Entrega Contínua: confiabilidade e qualidade na implantação de software</h3>
+          <p class="certificado__desc">
+            Descrição do certificado 14.
+          </p>
+          <p class="certificado__instituicao">Alura</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section contato center" id="contato">
+      <h2 class="section__title">Contato</h2>
+      <a href="mailto:lucassantuss@outlook.com">
+        <span class="btn btn--outline">E-mail</span>
       </a>
-    </footer>
+    </section>
+  </main>
 
-    <div class="scroll-container">
+  <footer class="footer">
+    <a href="https://lucassantuss.github.io/Curriculo-Portfolio/" class="link footer__link">
+      Powered by Lucas Araujo dos Santos
+    </a>
+  </footer>
+
+  <div class="scroll-container">
     <div class="scroll-top">
       <a aria-label="Scroll up" href="#top">
         <i aria-hidden="true" class="fas fa-arrow-up"></i>
       </a>
     </div>
-    </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

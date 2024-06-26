@@ -412,3 +412,47 @@ main {
     display: none;
   }
 }
+
+.certificados__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 3em;
+}
+
+.certificado {
+  max-width: 300px;
+  padding: 1.5em;
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  text-align: center;
+}
+
+.certificado:hover {
+  transform: translateY(-7px);
+}
+
+.certificado__img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.certificado__desc {
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
+.certificado__instituicao {
+  color: var(--clr-fg-alt);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .certificados__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

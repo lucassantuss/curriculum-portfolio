@@ -61,3 +61,7 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+function abrirLink(url) {
+	window.open(url, '_blank');
+  }
