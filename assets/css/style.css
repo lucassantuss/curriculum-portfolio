@@ -1,5 +1,3 @@
-/* global styles */
-
 * {
   padding: 0;
   margin: 0;
@@ -95,8 +93,6 @@ button {
     font-size: 2.6rem;
   }
 }
-
-/* buttons and links */
 
 .link {
   color: var(--clr-primary);
@@ -428,6 +424,9 @@ main {
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .certificado:hover {
@@ -440,14 +439,10 @@ main {
   margin-bottom: 1em;
 }
 
-.certificado__desc {
-  font-size: 0.9rem;
-  margin-bottom: 1em;
-}
-
 .certificado__instituicao {
   color: var(--clr-fg-alt);
   font-size: 0.8rem;
+  margin-top: auto;
 }
 
 @media (max-width: 900px) {
@@ -455,4 +450,16 @@ main {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.certificado {
+  max-width: 300px;
+  padding: 1.5em;
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
