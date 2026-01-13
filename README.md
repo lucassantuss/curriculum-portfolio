@@ -1,4 +1,4 @@
-# Currículo
+# Curriculum
 
-### Link de Visualização do Currículo Virtual
-https://lucassantuss.github.io/Curriculo-Portfolio/
+### Link to View Virtual Curriculum Vitae
+https://lucassantuss.github.io/curriculum-portfolio/
