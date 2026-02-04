@@ -4,8 +4,8 @@ const btnTheme = document.querySelector('.fa-moon')
 const btnHamburger = document.querySelector('.fa-bars')
 
 const addThemeClass = (bodyClass, btnClass) => {
-  body.classList.add(bodyClass)
-  btnTheme.classList.add(btnClass)
+	body.classList.add(bodyClass)
+	btnTheme.classList.add(btnClass)
 }
 
 const getBodyTheme = localStorage.getItem('portfolio-theme')
@@ -20,7 +20,7 @@ const setTheme = (bodyClass, btnClass) => {
 	body.classList.remove(localStorage.getItem('portfolio-theme'))
 	btnTheme.classList.remove(localStorage.getItem('portfolio-btn-theme'))
 
-  addThemeClass(bodyClass, btnClass)
+	addThemeClass(bodyClass, btnClass)
 
 	localStorage.setItem('portfolio-theme', bodyClass)
 	localStorage.setItem('portfolio-btn-theme', btnClass)
@@ -64,4 +64,66 @@ document.addEventListener('scroll', scrollUp)
 
 function abrirLink(url) {
 	window.open(url, '_blank');
-  }
+}
+
+function setupCarousel(carouselSelector, interval = 3500) {
+	const carousel = document.querySelector(carouselSelector);
+	if (!carousel) return;
+
+	let isDown = false;
+	let startX;
+	let scrollLeft;
+	let autoScroll;
+
+	// Drag com mouse
+	carousel.addEventListener('mousedown', (e) => {
+		isDown = true;
+		carousel.classList.add('dragging');
+		startX = e.pageX - carousel.offsetLeft;
+		scrollLeft = carousel.scrollLeft;
+		clearInterval(autoScroll);
+	});
+
+	carousel.addEventListener('mouseleave', () => {
+		isDown = false;
+		carousel.classList.remove('dragging');
+	});
+
+	carousel.addEventListener('mouseup', () => {
+		isDown = false;
+		carousel.classList.remove('dragging');
+		startAutoScroll();
+	});
+
+	carousel.addEventListener('mousemove', (e) => {
+		if (!isDown) return;
+		e.preventDefault();
+		const x = e.pageX - carousel.offsetLeft;
+		const walk = (x - startX) * 2; // velocidade
+		carousel.scrollLeft = scrollLeft - walk;
+	});
+
+	// Auto-scroll
+	function startAutoScroll() {
+		autoScroll = setInterval(() => {
+			carousel.scrollBy({
+				left: carousel.clientWidth,
+				behavior: 'smooth'
+			});
+
+			// volta pro início se chegar no fim
+			if (
+				carousel.scrollLeft + carousel.clientWidth >=
+				carousel.scrollWidth - 5
+			) {
+				carousel.scrollTo({ left: 0, behavior: 'smooth' });
+			}
+		}, interval);
+	}
+
+	startAutoScroll();
+}
+
+// Ativa nos dois carrosséis
+setupCarousel('.experiencias__carousel', 4000);
+setupCarousel('.formacoes__carousel', 4500);
